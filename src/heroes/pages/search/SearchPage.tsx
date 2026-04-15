@@ -31,7 +31,7 @@ export const SearchPage = () => {
                 description="Descubre, explora y administra super héroes y villanos"
             />
 
-            <CustomBreadcrumb path={['search']} />
+            <CustomBreadcrumb route={[{ path: 'heroes/search', name: 'Search' }]} />
 
             {/* Stats Dashboard */}
             <HeroStats />

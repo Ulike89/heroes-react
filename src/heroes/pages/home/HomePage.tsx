@@ -40,7 +40,7 @@ export const HomePage = () => {
                 description="Descubre, explora y administra super héroes y villanos"
             />
 
-            <CustomBreadcrumb path={['']} />
+            <CustomBreadcrumb route={[]} />
 
             {/* Stats Dashboard */}
             <HeroStats />

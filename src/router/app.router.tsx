@@ -5,6 +5,7 @@ import { HeroesLayout } from "@/heroes/layouts/HeroesLayout";
 import { HeroPage } from "@/heroes/pages/hero/HeroPage";
 import { HomePage } from "@/heroes/pages/home/HomePage";
 import { lazy } from "react";
+import { LoginPage } from "@/auth/pages/LoginPage";
 // import { SearchPage } from "@/heroes/pages/search/SearchPage";
 
 const SearchPage = lazy(() => import('@/heroes/pages/search/SearchPage'))
@@ -13,6 +14,10 @@ export const appRouter = createBrowserRouter(
     [
         {
             path: '/',
+            element: <LoginPage />
+        },
+        {
+            path: '/heroes',
             element: <HeroesLayout />,
             children: [
                 {
@@ -20,7 +25,7 @@ export const appRouter = createBrowserRouter(
                     element: <HomePage />
                 },
                 {
-                    path: 'heroes/:idSlug',
+                    path: 'heroe/:idSlug',
                     element: <HeroPage />
                 },
                 {
@@ -28,8 +33,8 @@ export const appRouter = createBrowserRouter(
                     element: <SearchPage />
                 },
                 {
-                    path: '*',
-                    element: <Navigate to='/' />
+                    path: 'heroes/*',
+                    element: <Navigate to='/heroes' />
                 }
             ]
         },

@@ -17,7 +17,7 @@ export const HeroGridCard = ({ hero }: Props) => {
     const { isFavorite, toggleFavorite } = use(FavoriteHeroContext)
 
     const handleClick = () => {
-        navigate(`/heroes/${hero.slug}`)
+        navigate(`/heroes/heroe/${hero.slug}`)
     }
 
     return (

@@ -4,9 +4,10 @@ import { SlashIcon } from 'lucide-react'
 
 interface Props {
     subPath: string
+    name: string
 }
 
-export const CustomBreadcrumbItem = ({ subPath }: Props) => {
+export const CustomBreadcrumbItem = ({ subPath, name }: Props) => {
     return (
         <>
             <BreadcrumbSeparator>
@@ -14,7 +15,7 @@ export const CustomBreadcrumbItem = ({ subPath }: Props) => {
             </BreadcrumbSeparator>
             <BreadcrumbItem>
                 <BreadcrumbLink asChild>
-                    <Link to={`/${subPath}`}>{subPath}</Link>
+                    <Link to={`/${subPath}`}>{name}</Link>
                 </BreadcrumbLink>
             </BreadcrumbItem>
         </>

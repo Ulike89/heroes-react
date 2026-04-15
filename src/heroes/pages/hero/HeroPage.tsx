@@ -17,7 +17,7 @@ export const HeroPage = () => {
     })
 
     if (isError) {
-        return <Navigate to="/" />;
+        return <Navigate to="/heroes" />;
     }
 
     if (!superheroData) {
