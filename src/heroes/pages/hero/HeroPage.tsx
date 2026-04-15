@@ -247,7 +247,7 @@ export const HeroPage = () => {
                                     {superheroData.powers.map((power, index) => (
                                         <div
                                             key={index}
-                                            className="bg-gradient-to-r from-blue-50 to-indigo-50 p-4 rounded-lg border border-blue-200"
+                                            className="bg-linear-to-r from-blue-50 to-indigo-50 p-4 rounded-lg border border-blue-200"
                                         >
                                             <div className="flex items-center gap-3">
                                                 <div className="bg-blue-500 p-2 rounded-full">
