@@ -6,22 +6,23 @@ exports[`HeroStats > should render HeroStats with mock information 1`] = `
     class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8"
   >
     <div
-      class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm"
+      class="group/card flex flex-col gap-4 overflow-hidden rounded-xl bg-card py-4 text-sm text-card-foreground ring-1 ring-foreground/10 has-data-[slot=card-footer]:pb-0 has-[>img:first-child]:pt-0 data-[size=sm]:gap-3 data-[size=sm]:py-3 data-[size=sm]:has-data-[slot=card-footer]:pb-0 *:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl"
+      data-size="default"
       data-slot="card"
     >
       <div
-        class="@container/card-header auto-rows-min grid-rows-[auto_auto] gap-2 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6 flex flex-row items-center justify-between space-y-0 pb-2"
+        class="group/card-header @container/card-header auto-rows-min gap-1 rounded-t-xl px-4 group-data-[size=sm]/card:px-3 has-data-[slot=card-action]:grid-cols-[1fr_auto] has-data-[slot=card-description]:grid-rows-[auto_auto] [.border-b]:pb-4 group-data-[size=sm]/card:[.border-b]:pb-3 flex flex-row items-center justify-between space-y-0 pb-2"
         data-slot="card-header"
       >
         <div
-          class="text-sm font-medium"
+          class="font-heading group-data-[size=sm]/card:text-sm text-sm font-medium"
           data-slot="card-title"
         >
           Total Characters
         </div>
         <svg
           aria-hidden="true"
-          class="lucide lucide-users h-4 w-4 text-muted-foreground"
+          class="lucide lucide-users h-4 w-4 text-foreground"
           fill="none"
           height="24"
           stroke="currentColor"
@@ -49,7 +50,7 @@ exports[`HeroStats > should render HeroStats with mock information 1`] = `
         </svg>
       </div>
       <div
-        class="px-6"
+        class="px-4 group-data-[size=sm]/card:px-3"
         data-slot="card-content"
       >
         <div
@@ -61,7 +62,7 @@ exports[`HeroStats > should render HeroStats with mock information 1`] = `
           class="flex gap-1 mt-2"
         >
           <span
-            class="inline-flex items-center justify-center rounded-full border border-transparent px-2 py-0.5 font-medium w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden bg-secondary text-secondary-foreground [a&]:hover:bg-secondary/90 text-xs"
+            class="group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border border-transparent px-2 py-0.5 font-medium whitespace-nowrap transition-all focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! bg-secondary text-secondary-foreground [a]:hover:bg-secondary/80 text-xs"
             data-slot="badge"
             data-variant="secondary"
           >
@@ -69,7 +70,7 @@ exports[`HeroStats > should render HeroStats with mock information 1`] = `
              Heroes
           </span>
           <span
-            class="inline-flex items-center justify-center rounded-full border border-transparent px-2 py-0.5 font-medium w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden bg-destructive text-white [a&]:hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60 text-xs"
+            class="group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border border-transparent px-2 py-0.5 font-medium whitespace-nowrap transition-all focus-visible:border-ring focus-visible:ring-[3px] has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! bg-destructive/10 text-destructive focus-visible:ring-destructive/20 dark:bg-destructive/20 dark:focus-visible:ring-destructive/40 [a]:hover:bg-destructive/20 text-xs"
             data-slot="badge"
             data-variant="destructive"
           >
@@ -80,22 +81,23 @@ exports[`HeroStats > should render HeroStats with mock information 1`] = `
       </div>
     </div>
     <div
-      class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm"
+      class="group/card flex flex-col gap-4 overflow-hidden rounded-xl bg-card py-4 text-sm text-card-foreground ring-1 ring-foreground/10 has-data-[slot=card-footer]:pb-0 has-[>img:first-child]:pt-0 data-[size=sm]:gap-3 data-[size=sm]:py-3 data-[size=sm]:has-data-[slot=card-footer]:pb-0 *:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl"
+      data-size="default"
       data-slot="card"
     >
       <div
-        class="@container/card-header auto-rows-min grid-rows-[auto_auto] gap-2 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6 flex flex-row items-center justify-between space-y-0 pb-2"
+        class="group/card-header @container/card-header auto-rows-min gap-1 rounded-t-xl px-4 group-data-[size=sm]/card:px-3 has-data-[slot=card-action]:grid-cols-[1fr_auto] has-data-[slot=card-description]:grid-rows-[auto_auto] [.border-b]:pb-4 group-data-[size=sm]/card:[.border-b]:pb-3 flex flex-row items-center justify-between space-y-0 pb-2"
         data-slot="card-header"
       >
         <div
-          class="text-sm font-medium"
+          class="font-heading group-data-[size=sm]/card:text-sm text-sm font-medium"
           data-slot="card-title"
         >
           Favorites
         </div>
         <svg
           aria-hidden="true"
-          class="lucide lucide-heart h-4 w-4 text-muted-foreground"
+          class="lucide lucide-heart h-4 w-4 text-foreground"
           fill="none"
           height="24"
           stroke="currentColor"
@@ -112,7 +114,7 @@ exports[`HeroStats > should render HeroStats with mock information 1`] = `
         </svg>
       </div>
       <div
-        class="px-6"
+        class="px-4 group-data-[size=sm]/card:px-3"
         data-slot="card-content"
       >
         <div
@@ -122,7 +124,7 @@ exports[`HeroStats > should render HeroStats with mock information 1`] = `
           0
         </div>
         <p
-          class="text-xs text-muted-foreground"
+          class="text-xs text-foreground"
           data-testid="favorite-percentage"
         >
           0.00
@@ -131,22 +133,23 @@ exports[`HeroStats > should render HeroStats with mock information 1`] = `
       </div>
     </div>
     <div
-      class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm"
+      class="group/card flex flex-col gap-4 overflow-hidden rounded-xl bg-card py-4 text-sm text-card-foreground ring-1 ring-foreground/10 has-data-[slot=card-footer]:pb-0 has-[>img:first-child]:pt-0 data-[size=sm]:gap-3 data-[size=sm]:py-3 data-[size=sm]:has-data-[slot=card-footer]:pb-0 *:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl"
+      data-size="default"
       data-slot="card"
     >
       <div
-        class="@container/card-header auto-rows-min grid-rows-[auto_auto] gap-2 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6 flex flex-row items-center justify-between space-y-0 pb-2"
+        class="group/card-header @container/card-header auto-rows-min gap-1 rounded-t-xl px-4 group-data-[size=sm]/card:px-3 has-data-[slot=card-action]:grid-cols-[1fr_auto] has-data-[slot=card-description]:grid-rows-[auto_auto] [.border-b]:pb-4 group-data-[size=sm]/card:[.border-b]:pb-3 flex flex-row items-center justify-between space-y-0 pb-2"
         data-slot="card-header"
       >
         <div
-          class="text-sm font-medium"
+          class="font-heading group-data-[size=sm]/card:text-sm text-sm font-medium"
           data-slot="card-title"
         >
           Strongest
         </div>
         <svg
           aria-hidden="true"
-          class="lucide lucide-zap h-4 w-4 text-muted-foreground"
+          class="lucide lucide-zap h-4 w-4 text-foreground"
           fill="none"
           height="24"
           stroke="currentColor"
@@ -163,7 +166,7 @@ exports[`HeroStats > should render HeroStats with mock information 1`] = `
         </svg>
       </div>
       <div
-        class="px-6"
+        class="px-4 group-data-[size=sm]/card:px-3"
         data-slot="card-content"
       >
         <div
@@ -172,7 +175,7 @@ exports[`HeroStats > should render HeroStats with mock information 1`] = `
           Superman
         </div>
         <p
-          class="text-xs text-muted-foreground"
+          class="text-xs text-foreground"
         >
           Strength: 
           10
@@ -181,22 +184,23 @@ exports[`HeroStats > should render HeroStats with mock information 1`] = `
       </div>
     </div>
     <div
-      class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm"
+      class="group/card flex flex-col gap-4 overflow-hidden rounded-xl bg-card py-4 text-sm text-card-foreground ring-1 ring-foreground/10 has-data-[slot=card-footer]:pb-0 has-[>img:first-child]:pt-0 data-[size=sm]:gap-3 data-[size=sm]:py-3 data-[size=sm]:has-data-[slot=card-footer]:pb-0 *:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl"
+      data-size="default"
       data-slot="card"
     >
       <div
-        class="@container/card-header auto-rows-min grid-rows-[auto_auto] gap-2 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6 flex flex-row items-center justify-between space-y-0 pb-2"
+        class="group/card-header @container/card-header auto-rows-min gap-1 rounded-t-xl px-4 group-data-[size=sm]/card:px-3 has-data-[slot=card-action]:grid-cols-[1fr_auto] has-data-[slot=card-description]:grid-rows-[auto_auto] [.border-b]:pb-4 group-data-[size=sm]/card:[.border-b]:pb-3 flex flex-row items-center justify-between space-y-0 pb-2"
         data-slot="card-header"
       >
         <div
-          class="text-sm font-medium"
+          class="font-heading group-data-[size=sm]/card:text-sm text-sm font-medium"
           data-slot="card-title"
         >
           Smartest
         </div>
         <svg
           aria-hidden="true"
-          class="lucide lucide-trophy h-4 w-4 text-muted-foreground"
+          class="lucide lucide-trophy h-4 w-4 text-foreground"
           fill="none"
           height="24"
           stroke="currentColor"
@@ -228,7 +232,7 @@ exports[`HeroStats > should render HeroStats with mock information 1`] = `
         </svg>
       </div>
       <div
-        class="px-6"
+        class="px-4 group-data-[size=sm]/card:px-3"
         data-slot="card-content"
       >
         <div
@@ -237,7 +241,7 @@ exports[`HeroStats > should render HeroStats with mock information 1`] = `
           Batman
         </div>
         <p
-          class="text-xs text-muted-foreground"
+          class="text-xs text-foreground"
         >
           Intelligence: 
           10

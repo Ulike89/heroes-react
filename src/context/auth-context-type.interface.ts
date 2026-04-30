@@ -2,5 +2,6 @@ import type { GoogleUserInfo } from "@/auth/interfaces/google-user-info.interfac
 
 export interface AuthContextType {
     user: GoogleUserInfo | null;
-    saveUser: (user: GoogleUserInfo) => void
+    saveUser: (user: GoogleUserInfo) => void;
+    logout: () => void;
 }

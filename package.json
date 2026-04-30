@@ -13,9 +13,10 @@
     "coverage": "vitest run --coverage"
   },
   "dependencies": {
+    "@fontsource-variable/geist": "^5.2.8",
     "@react-oauth/google": "^0.13.5",
     "@tailwindcss/vite": "^4.1.18",
-    "@tanstack/react-query": "^5.90.21",
+    "@tanstack/react-query": "^5.100.6",
     "@tanstack/react-query-devtools": "^5.91.3",
     "axios": "^1.13.5",
     "class-variance-authority": "^0.7.1",
@@ -25,7 +26,8 @@
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-router": "^7.13.0",
-    "tailwind-merge": "^3.4.0",
+    "shadcn": "^4.6.0",
+    "tailwind-merge": "^3.5.0",
     "tailwindcss": "^4.1.18"
   },
   "devDependencies": {

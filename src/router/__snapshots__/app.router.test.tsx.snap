@@ -3,38 +3,8 @@
 exports[`appRouter > should be configured as expected 1`] = `
 [
   {
-    "children": [
-      {
-        "element": <HomePage />,
-        "hasErrorBoundary": false,
-        "id": "0-0",
-        "index": true,
-      },
-      {
-        "children": undefined,
-        "element": <HeroPage />,
-        "hasErrorBoundary": false,
-        "id": "0-1",
-        "path": "heroes/:idSlug",
-      },
-      {
-        "children": undefined,
-        "element": <UNDEFINED />,
-        "hasErrorBoundary": false,
-        "id": "0-2",
-        "path": "search",
-      },
-      {
-        "children": undefined,
-        "element": <Navigate
-          to="/"
-        />,
-        "hasErrorBoundary": false,
-        "id": "0-3",
-        "path": "*",
-      },
-    ],
-    "element": <HeroesLayout />,
+    "children": undefined,
+    "element": <LoginPage />,
     "hasErrorBoundary": false,
     "id": "0",
     "path": "/",
@@ -42,15 +12,52 @@ exports[`appRouter > should be configured as expected 1`] = `
   {
     "children": [
       {
-        "element": <AdminPage />,
+        "element": <HomePage />,
         "hasErrorBoundary": false,
         "id": "1-0",
+        "index": true,
+      },
+      {
+        "children": undefined,
+        "element": <HeroPage />,
+        "hasErrorBoundary": false,
+        "id": "1-1",
+        "path": "heroe/:idSlug",
+      },
+      {
+        "children": undefined,
+        "element": <UNDEFINED />,
+        "hasErrorBoundary": false,
+        "id": "1-2",
+        "path": "search",
+      },
+      {
+        "children": undefined,
+        "element": <Navigate
+          to="/heroes"
+        />,
+        "hasErrorBoundary": false,
+        "id": "1-3",
+        "path": "heroes/*",
+      },
+    ],
+    "element": <HeroesLayout />,
+    "hasErrorBoundary": false,
+    "id": "1",
+    "path": "/heroes",
+  },
+  {
+    "children": [
+      {
+        "element": <AdminPage />,
+        "hasErrorBoundary": false,
+        "id": "2-0",
         "index": true,
       },
     ],
     "element": <AdminLayout />,
     "hasErrorBoundary": false,
-    "id": "1",
+    "id": "2",
     "path": "/admin",
   },
 ]
