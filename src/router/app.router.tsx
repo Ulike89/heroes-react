@@ -6,6 +6,7 @@ import { HeroPage } from "@/heroes/pages/hero/HeroPage";
 import { HomePage } from "@/heroes/pages/home/HomePage";
 import { lazy } from "react";
 import { LoginPage } from "@/auth/pages/LoginPage";
+import { ProtectedRoute } from "./ProtectedRoute";
 // import { SearchPage } from "@/heroes/pages/search/SearchPage";
 
 const SearchPage = lazy(() => import('@/heroes/pages/search/SearchPage'))
@@ -18,7 +19,7 @@ export const appRouter = createBrowserRouter(
         },
         {
             path: '/heroes',
-            element: <HeroesLayout />,
+            element: <ProtectedRoute><HeroesLayout /></ProtectedRoute>,
             children: [
                 {
                     index: true,
@@ -40,7 +41,7 @@ export const appRouter = createBrowserRouter(
         },
         {
             path: '/admin',
-            element: <AdminLayout />,
+            element: <ProtectedRoute><AdminLayout /></ProtectedRoute>,
             children: [
                 {
                     index: true,

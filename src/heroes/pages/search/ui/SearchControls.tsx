@@ -139,7 +139,7 @@ export const SearchControls = () => {
             <Accordion type="single" collapsible value={activeAccordion} data-testid="accordion">
                 <AccordionItem value="advanced-filters">
                     <AccordionContent>
-                        <div className="bg-white rounded-lg p-6 mb-8 shadow-sm border">
+                        <div className="bg-white dark:bg-slate-900 rounded-lg p-6 mb-8 shadow-sm border">
                             <div className="flex justify-between items-center mb-4">
                                 <h3 className="text-lg font-semibold">Advanced Filters</h3>
                                 <Button

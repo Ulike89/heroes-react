@@ -7,10 +7,10 @@ export const ThemeToggle = () => {
 
   return (
     <ToggleGroup type="single" defaultValue={theme}>
-      <ToggleGroupItem value="light" aria-label="Toggle light" onClick={() => toggle('light')} className='bg-gray-900'>
+      <ToggleGroupItem value="light" aria-label="Toggle light" onClick={() => toggle('light')}>
         <SunIcon className="size-5" />
       </ToggleGroupItem>
-      <ToggleGroupItem value="dark" aria-label="Toggle dark" onClick={() => toggle('dark')} className='dark:bg-slate-500'>
+      <ToggleGroupItem value="dark" aria-label="Toggle dark" onClick={() => toggle('dark')}>
         <MoonIcon className="size-5" />
       </ToggleGroupItem>
     </ToggleGroup>

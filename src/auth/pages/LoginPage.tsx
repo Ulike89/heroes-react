@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { useNavigate } from "react-router"
 import { useGoogleLogin, type TokenResponse } from '@react-oauth/google';
 import type { GoogleUserInfo } from "../interfaces/google-user-info.interface";
@@ -29,8 +29,8 @@ export const LoginPage = () => {
                 const user: GoogleUserInfo = await userInfoResponse.json();
 
                 if (user.email_verified) {
-                    navigate('/heroes');
                     saveUser(user);
+                    navigate('/heroes');
                 }
             } catch (err) {
                 console.error('Login error:', err);
@@ -42,22 +42,56 @@ export const LoginPage = () => {
     });
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900">
-            <Card>
-                <CardContent className="flex flex-col items-center gap-4">
-                    <p>
-                        <span>Login with Google</span>
+        <div className="min-h-screen w-full bg-linear-to-br from-slate-900 via-slate-800 to-slate-900 flex flex-col items-center justify-center p-4">
+            {/* Content */}
+            <div className="z-10 w-full max-w-md">
+                {/* Header */}
+                <div className="text-center mb-8">
+                    <h1 className="text-4xl md:text-5xl font-bold text-white mb-2">
+                        Heroes App
+                    </h1>
+                    <p className="text-slate-300 text-lg">
+                        Explora el universo de héroes
                     </p>
-                    <Button variant="outline" onClick={() => handleGoogleLogin()}>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <path
-                                d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"
-                                fill="currentColor"
-                            />
-                        </svg>
-                    </Button>
-                </CardContent>
-            </Card>
+                </div>
+
+                {/* Login Card */}
+                <Card className="border border-slate-700 bg-slate-800/50 backdrop-blur-sm shadow-2xl">
+                    <CardHeader className="text-center pb-4">
+                        <CardTitle className="text-2xl text-white">Bienvenido</CardTitle>
+                        <CardDescription className="text-slate-300 mt-2">
+                            Inicia sesión para continuar
+                        </CardDescription>
+                    </CardHeader>
+
+                    <CardContent className="flex flex-col items-center gap-6 pt-2">
+                        <div className="w-full space-y-3">
+                            <p className="text-center text-sm text-slate-300">
+                                Autentícate con tu cuenta de Google
+                            </p>
+
+                            <Button
+                                onClick={() => handleGoogleLogin()}
+                                className="w-full h-12 bg-white hover:bg-slate-50 text-slate-900 font-semibold rounded-lg flex items-center justify-center gap-3 transition-all duration-200 shadow-md hover:shadow-lg cursor-pointer"
+                            >
+                                <img
+                                    src="https://www.gstatic.com/images/branding/googleg_gradient/svg/googleg_gradient_standard_24px.svg"
+                                    width="20"
+                                    height="20"
+                                    alt="Google"
+                                />
+                                <span>Continuar con Google</span>
+                            </Button>
+                        </div>
+
+                        <div className="w-full pt-4 border-t border-slate-700">
+                            <p className="text-xs text-slate-400 text-center">
+                                Al continuar, aceptas nuestros términos y condiciones
+                            </p>
+                        </div>
+                    </CardContent>
+                </Card>
+            </div>
         </div>
     )
 }
